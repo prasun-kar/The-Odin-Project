@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <script defer src="app.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="title">
+    <h1>Library</h1>
+  </div>
+
+  <p class="helper-text" id="helper-text">You have nothing in your library. Add some books with the button below!</p>
+
+  <div class="library" id="library"></div>
+  
+  <div class="form">
+    <button class="add-book" id="form-button" onclick="toggleForm()">Add Book</button>
+
+    <form hidden="true" id="form-add-book">
+      <input type="text"     id="form-title"  placeholder="Title..."      />
+      <input type="text"     id="form-author" placeholder="Author..."     />
+      <input type="number"   id="form-pages"  placeholder="# of Pages..." />
+      
+      <div class="checkbox">
+        <label for="form-read">
+          Read? <input type="checkbox" id="form-read" />
+        </label>
+      </div>
+      
+      <div class="buttons">
+        <button type="button" class="form-cancel" onclick="toggleForm(); toggleValidationText(false, '')">Cancel</button>
+        <button type="button" class="form-submit" onclick="addBookToLibrary()">Submit</button>
+      </div>
+    </form>
+  </div>
+  <p class="validation-text" id="validation-text"></p> 
+</body>
+</html>
