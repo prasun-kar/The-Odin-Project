@@ -4,8 +4,8 @@ Repository for holding all of my projects created within [The Odin Project](http
 
 ## Project List
 - [x] [Library](https://github.com/prasun-kar/The-Odin-Project/tree/master/Library)
-- [] Tic Tac Toe
-- [] Restaurant Page
-- [] Todo List
+- [ ] Tic Tac Toe
+- [ ] Restaurant Page
+- [ ] Todo List
 
 by [Prasun Kar](https://github.com/prasun-kar)
